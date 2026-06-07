@@ -12,7 +12,7 @@ A mobile-first Base Mini App for three simple onchain circuit actions: Place Chi
 <meta name="base:app_id" content="YOUR_BASE_DEV_VERIFY_TOKEN" />
 ```
 
-4. After base.dev issues the builder code, set `NEXT_PUBLIC_BUILDER_DATA_SUFFIX` to the ERC-8021 encoded string.
+4. The builder code is `bc_ihpppk9o`; `NEXT_PUBLIC_BUILDER_DATA_SUFFIX` contains the ERC-8021 encoded string.
 5. Deploy to Vercel and turn off Deployment Protection for public Base App access.
 
 ## Commands
