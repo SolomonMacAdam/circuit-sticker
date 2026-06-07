@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --bench: #101514;
+  --board: #0b6b45;
+  --board-deep: #06432f;
+  --silk: #f3fff8;
+  --steel: #6d7780;
+  --steel-dark: #2c3438;
+  --warning: #ff3fa4;
+  --base-blue: #0052ff;
+  --trace: rgba(243, 255, 248, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-height: 100%;
+  background: var(--bench);
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  color: var(--silk);
+  background:
+    radial-gradient(circle at top left, rgba(0, 82, 255, 0.18), transparent 28rem),
+    linear-gradient(135deg, #0e1715, #171d1e 48%, #0d1212);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.circuit-board {
+  background:
+    linear-gradient(90deg, transparent 0 18px, rgba(243, 255, 248, 0.1) 18px 20px, transparent 20px 42px),
+    linear-gradient(0deg, transparent 0 22px, rgba(243, 255, 248, 0.08) 22px 24px, transparent 24px 46px),
+    radial-gradient(circle at 18% 20%, rgba(255, 63, 164, 0.18), transparent 10rem),
+    linear-gradient(145deg, var(--board), var(--board-deep));
+}
+
+.trace-lines {
+  background-image:
+    linear-gradient(90deg, transparent 12%, var(--trace) 12% 13%, transparent 13%),
+    linear-gradient(90deg, transparent 62%, var(--trace) 62% 63%, transparent 63%),
+    linear-gradient(0deg, transparent 21%, var(--trace) 21% 22%, transparent 22%),
+    linear-gradient(0deg, transparent 72%, var(--trace) 72% 73%, transparent 73%);
+}
+
+.status-led {
+  box-shadow: 0 0 0 4px rgba(0, 82, 255, 0.15), 0 0 22px rgba(0, 82, 255, 0.95);
+}
